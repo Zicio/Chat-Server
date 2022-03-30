@@ -1,0 +1,40 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "server.js",
+  "scripts": {
+    "start": "forever server.js",
+    "watch": "forever -w server.js",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": "17.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zicio/Chat-Server.git"
+  },
+  "author": "Zicio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zicio/Chat-Server/issues"
+  },
+  "homepage": "https://github.com/Zicio/Chat-Server#readme",
+  "dependencies": {
+    "@koa/cors": "^3.3.0",
+    "@koa/router": "^10.1.1",
+    "forever": "^4.0.3",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint-config-koa": "^2.0.2",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0"
+  }
+}
