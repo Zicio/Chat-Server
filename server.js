@@ -21,15 +21,13 @@ app.use(koaBody({
   json: true
 }));
 
-
-console.log(users);
 router.post('/login', async ctx => {
   for (const user of users) {
-    if (ctx.request.body.name === user.name && ctx.request.bodypassword === user.password) {
+    if (ctx.request.body.nickname === user.nickname && ctx.request.body.password === user.password) {
       ctx.response.body = true;
       ctx.response.status = 200;
       console.log(ctx.response.body);
-      break;
+      return;
     }
   }
   ctx.response.body = false;
