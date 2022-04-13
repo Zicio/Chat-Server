@@ -12,8 +12,8 @@ const users = [
 ];
 
 const messages = [
-  // { name: 'AAA 19:20, 20.12.21', text: 'Hello!!!' },
-  // { name: 'BBB 19:21, 20.12.21', text: 'Hi' }
+  // { name: 'Zicio' date: '19:20, 20.12.21', text: 'Hello!!!' },
+  // { name: 'Zicio' date: '19:21, 20.12.21', text: 'Hi' }
 ];
 
 module.exports = users;
