@@ -30,8 +30,8 @@ router.post('/login', async ctx => {
       return;
     }
   }
-  ctx.response.body = false;
-  ctx.response.status = 200;
+  ctx.response.body = 'Неправильный никнейм/пароль!';
+  ctx.response.status = 400;
   console.log(ctx.response.body);
 });
 
